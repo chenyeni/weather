@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>天气app</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/rem.js"></script>
+	<link rel="icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 当前信息 -->
+	<section id="now">
+		<!-- 当前城市 -->
+		<h1 class="now_city">
+			<span class="address_icon">&#xe61f;</span>
+			<span class="nowcity_name">太原</span>
+		</h1>
+		<!-- 当前空气质量 -->
+		<div class="now_air">
+			<h1>空气</h1>
+			<h2>良</h2>
+		</div>
+		<!-- 当前温度 -->
+		<h2 class="now_temp">
+			<span>-3</span>°
+		</h2>
+		<!-- 当前天气状况 -->
+		<h3 class="now_weather">
+			<span>晴</span>
+		</h3>
+		<!-- 当前风级 -->
+		<div class="now_wind_box">
+		<span class="now_wind">北风</span>
+		<span class="now_wind_level">3</span>级
+		</div>
+		<!-- 小提示 -->
+		<h2 class="tishi">天气冷了，注意保暖~</h2>
+	</section>
+	<!-- 未来两天天气情况 -->
+	<section id="future">
+		<div class="future_box today">
+			<div class="future_top">
+				<span class="future_date">今天</span>
+				<p><span class="today_higntemp">4</span>/<span class="today_lowtemp">-10</span>°C</p>
+			</div>
+			<div class="future_top">
+				<span class="today_weather">多云</span>
+				<div class="today_img">
+					<img src="img/1.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="future_box tomorrow">
+			<div class="future_top">
+				<span class="future_date">明天</span>
+				<p><span class="tomorrow_higntemp">5</span>/<span class="tomorrow_lowtemp">-7</span>°C</p>
+			</div>
+			<div class="future_top">
+				<span class="ttomorrow_weather">多云</span>
+				<div class="tomorrow_img">
+					<img src="img/1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 未来24小时天气情况 -->
+	<ul id="hours">
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_img">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp"><span>-8</span>°</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">9:00</h1>
+			<div class="hours_img">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp"><span>-3</span>°</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">10:00</h1>
+			<div class="hours_img">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp"><span>-1</span>°</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">11:00</h1>
+			<div class="hours_img">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp"><span>0</span>°</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">12:00</h1>
+			<div class="hours_img">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp"><span>1</span>°</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">13:00</h1>
+			<div class="hours_img">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp"><span>3</span>°</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">14:00</h1>
+			<div class="hours_img">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp"><span>4</span>°</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">15:00</h1>
+			<div class="hours_img">
+				<img src="img/14.png" alt="">
+			</div>
+			<h2 class="hours_temp"><span>4</span>°</h2>
+		</li>
+	</ul>
+	<!-- 未来一周天气情况 -->
+	<ul id="week">
+		<li>
+			<h1 class="week_date">02/06</h1>
+			<span class="week_weather">多云转晴</span>
+			<div class="week_img">
+				<img src="img/15.png" alt="">
+			</div>
+			<div class="week_hightemp">
+				<span>4</span>
+			</div>
+			<div class="week_lowtemp">
+				<span>-14</span>
+			</div>
+			<div class="week_wind">
+				<span>西北风</span>
+			</div>
+			<div class="week_wind_level">
+				<span>3</span>级
+			</div>
+		</li>
+		<li>
+			<h1 class="week_date">02/07</h1>
+			<span class="week_weather">晴转多云</span>
+			<div class="week_img">
+				<img src="img/15.png" alt="">
+			</div>
+			<div class="week_hightemp">
+				<span>3</span>
+			</div>
+			<div class="week_lowtemp">
+				<span>-12</span>
+			</div>
+			<div class="week_wind">
+				<span>西北风</span>
+			</div>
+			<div class="week_wind_level">
+				<span>3</span>级
+			</div>
+		</li>
+		<li>
+			<h1 class="week_date">02/08</h1>
+			<span class="week_weather">多云</span>
+			<div class="week_img">
+				<img src="img/15.png" alt="">
+			</div>
+			<div class="week_hightemp">
+				<span>5</span>
+			</div>
+			<div class="week_lowtemp">
+				<span>-7</span>
+			</div>
+			<div class="week_wind">
+				<span>西北风</span>
+			</div>
+			<div class="week_wind_level">
+				<span>3-4</span>级
+			</div>
+		</li>
+		<li>
+			<h1 class="week_date">02/09</h1>
+			<span class="week_weather">多云</span>
+			<div class="week_img">
+				<img src="img/15.png" alt="">
+			</div>
+			<div class="week_hightemp">
+				<span>4</span>
+			</div>
+			<div class="week_lowtemp">
+				<span>-10</span>
+			</div>
+			<div class="week_wind">
+				<span>西北风</span>
+			</div>
+			<div class="week_wind_level">
+				<span>3-4</span>级
+			</div>
+		</li>
+		<li>
+			<h1 class="week_date">02/10</h1>
+			<span class="week_weather">多云转晴</span>
+			<div class="week_img">
+				<img src="img/15.png" alt="">
+			</div>
+			<div class="week_hightemp">
+				<span>0</span>
+			</div>
+			<div class="week_lowtemp">
+				<span>-11</span>
+			</div>
+			<div class="week_wind">
+				<span>西南风</span>
+			</div>
+			<div class="week_wind_level">
+				<span>3-4</span>级
+			</div>
+		</li>
+		<li>
+			<h1 class="week_date">02/11</h1>
+			<span class="week_weather">多云转晴</span>
+			<div class="week_img">
+				<img src="img/15.png" alt="">
+			</div>
+			<div class="week_hightemp">
+				<span>6</span>
+			</div>
+			<div class="week_lowtemp">
+				<span>-7</span>
+			</div>
+			<div class="week_wind">
+				<span>西北风</span>
+			</div>
+			<div class="week_wind_level">
+				<span>3</span>级
+			</div>
+		</li>
+		<li>
+			<h1 class="week_date">02/12</h1>
+			<span class="week_weather">多云转晴</span>
+			<div class="week_img">
+				<img src="img/15.png" alt="">
+			</div>
+			<div class="week_hightemp">
+				<span>5</span>
+			</div>
+			<div class="week_lowtemp">
+				<span>-10</span>
+			</div>
+			<div class="week_wind">
+				<span>西北风</span>
+			</div>
+			<div class="week_wind_level">
+				<span>3</span>级
+			</div>
+		</li>
+	</ul>
+	<!-- 定位城市选择 -->
+	<main id="citys">
+		<header>
+			<input type="text" class="search" placeholder="请输入搜索内容">
+			<h2 class="btn">取消</h2>
+		</header>
+		<div class="citys_item">
+			<span class="title">热门城市</span>
+			<div class="citys_chengshi">
+				<span class="citys_xiaokuang">太原</span>
+				<span class="citys_xiaokuang">北京</span>
+				<span class="citys_xiaokuang">上海</span>
+				<span class="citys_xiaokuang">四川</span>
+				<span class="citys_xiaokuang">杭州</span>
+				<span class="citys_xiaokuang">西安</span>
+			</div>
+		</div>
+		<div class="citys_item citys_item2">
+			<span class="title">贵州</span>
+			<div class="citys_chengshi">
+				<span class="citys_xiaokuang">仁怀</span>
+				<span class="citys_xiaokuang">安顺</span>
+				<span class="citys_xiaokuang">福泉</span>
+				<span class="citys_xiaokuang">清镇</span>
+				<span class="citys_xiaokuang">铜仁</span>
+				<span class="citys_xiaokuang">贵阳</span>
+				<span class="citys_xiaokuang">凯里</span>
+				<span class="citys_xiaokuang">遵义</span>
+				<span class="citys_xiaokuang">都匀</span>
+				<span class="citys_xiaokuang">兴义</span>
+				<span class="citys_xiaokuang">赤水</span>
+				<span class="citys_xiaokuang">六盘水</span>
+				<span class="citys_xiaokuang">毕节</span>
+			</div>
+		</div>
+		<div class="citys_item citys_item2">
+			<span class="title">河南</span>
+			<div class="citys_chengshi">
+				<span class="citys_xiaokuang">灵宝</span>
+				<span class="citys_xiaokuang">孟州</span>
+				<span class="citys_xiaokuang">开封</span>
+				<span class="citys_xiaokuang">卫辉</span>
+				<span class="citys_xiaokuang">汝州</span>
+				<span class="citys_xiaokuang">驻马店</span>
+				<span class="citys_xiaokuang">林州</span>
+				<span class="citys_xiaokuang">郑州</span>
+				<span class="citys_xiaokuang">洛阳</span>
+				<span class="citys_xiaokuang">邓州</span>
+				<span class="citys_xiaokuang">许昌</span>
+				<span class="citys_xiaokuang">焦作</span>
+				<span class="citys_xiaokuang">巩义</span>
+				<span class="citys_xiaokuang">登封</span>
+				<span class="citys_xiaokuang">禹州</span>
+
+			</div>
+		</div>
+	</main>
+</body>
+</html>
